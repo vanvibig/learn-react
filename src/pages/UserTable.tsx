@@ -7,7 +7,7 @@ const UserTable: React.FC = () => {
     const { data, error, isLoading } = useQuery({
         queryKey: ['get-users'],
         queryFn: () =>
-            fetch('/api/user').then((res) =>
+            fetch('/api/users').then((res) =>
                 res.json(),
             ),
     })
@@ -22,7 +22,7 @@ const UserTable: React.FC = () => {
                 { header: 'First Name', accessorKey: 'firstName' },
                 { header: 'Last Name', accessorKey: 'lastName' },
             ]}
-            data={[data]}
+            data={data}
         />
     );
 };

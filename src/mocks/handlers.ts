@@ -1,12 +1,9 @@
 // src/mocks/handlers.ts
 import { http, HttpResponse } from "msw";
+import users from "./users.json";
 
 export const handlers = [
-  http.get("/api/user", () => {
-    return HttpResponse.json({
-      id: 1,
-      firstName: "John",
-      lastName: "Doe",
-    });
+  http.get("/api/users", () => {
+    return HttpResponse.json(users);
   }),
 ];
