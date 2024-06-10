@@ -3,7 +3,7 @@ import React from 'react';
 import { MaterialReactTable } from 'material-react-table'; // Import the specific component from the library
 import { useQuery } from '@tanstack/react-query';
 
-const Home: React.FC = () => {
+const UserTable: React.FC = () => {
     const { data, error, isLoading } = useQuery({
         queryKey: ['get-users'],
         queryFn: () =>
@@ -27,4 +27,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default UserTable;
