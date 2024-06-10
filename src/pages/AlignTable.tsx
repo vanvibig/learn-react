@@ -6,16 +6,21 @@ import Container from "@mui/material/Container";
 
 const AlignTable: React.FC = () => {
   return (
-    <Container>
-      <Box>
-        <Grid container spacing={2}>
-          <Grid item xs={2}></Grid>
-          <Grid item xs={8}>
-            <UserTable />
+    <>
+      <Container>
+        <Box>
+          <Grid container spacing={2}>
+            <Grid item xs={12} />
+            <Grid item xs={12} />
+            <Grid item xs={12} />
+            <Grid item xs={2}></Grid>
+            <Grid item xs={8}>
+              <UserTable />
+            </Grid>
           </Grid>
-        </Grid>
-      </Box>
-    </Container>
+        </Box>
+      </Container>
+    </>
   );
 };
 
