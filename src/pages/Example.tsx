@@ -4,7 +4,7 @@ import {
   useMaterialReactTable,
   type MRT_ColumnDef,
 } from "material-react-table";
-
+import { useTranslation } from "react-i18next";
 //example data type
 type Person = {
   name: {
@@ -67,11 +67,13 @@ const data: Person[] = [
 
 const Example = () => {
   //should be memoized or stable
+  const { t } = useTranslation();
+  
   const columns = useMemo<MRT_ColumnDef<Person>[]>(
     () => [
       {
         accessorKey: "name.firstName", //access nested data with dot notation
-        header: "First Name",
+        header: t('first_name'),
         size: 150,
       },
       {
