@@ -1,7 +1,8 @@
 import { createBrowserRouter, Link } from "react-router-dom";
-import ToggleButton from "../pages/ToggleButton";
-import TableWithI18n from "../pages/TableWithI18n";
+import MyComponentWithLoading from "../components/MyComponentWithLoading";
 import SampleBox from "../pages/SampleBox";
+import TableWithI18n from "../pages/TableWithI18n";
+import ToggleButton from "../pages/ToggleButton";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,16 @@ const router = createBrowserRouter([
   {
     path: "sample-box",
     element: <SampleBox />,
+  },
+  {
+    path: "with-loading-hoc",
+    element: (
+      <div>
+        <h1>Higher-Order Component Example</h1>
+        <MyComponentWithLoading isLoading={true} message="Hello, World!" />
+        <MyComponentWithLoading isLoading={false} message="Hello, World!" />
+      </div>
+    ),
   },
 ]);
 
