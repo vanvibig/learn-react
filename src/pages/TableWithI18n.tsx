@@ -65,7 +65,7 @@ const data: Person[] = [
   },
 ];
 
-const Example = () => {
+const TableWithI18n = () => {
   //should be memoized or stable
   const { t } = useTranslation();
   
@@ -108,4 +108,4 @@ const Example = () => {
   return <MaterialReactTable table={table} />;
 };
 
-export default Example;
+export default TableWithI18n;

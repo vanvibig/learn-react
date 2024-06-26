@@ -1,20 +1,29 @@
-// src/routes/Router.tsx
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from '../pages/About';
-import AlignTable from '../pages/AlignTable';
-import Example from '../pages/Example';
+import { createBrowserRouter, Link } from "react-router-dom";
+import ToggleButton from "../pages/ToggleButton";
+import TableWithI18n from "../pages/TableWithI18n";
 
-const AppRouter: React.FC = () => {
-    return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<AlignTable />} />
-          <Route path="/example" element={<Example />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Router>
-    );
-};
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <div>
+        <h1>Hello World</h1>
+        <Link to="about">About Us</Link>
+      </div>
+    ),
+  },
+  {
+    path: "about",
+    element: <div>About</div>,
+  },
+  {
+    path: "test",
+    element: <ToggleButton />,
+  },
+  {
+    path: "table-with-i18n",
+    element: <TableWithI18n />,
+  },
+]);
 
-export default AppRouter;
+export default router;

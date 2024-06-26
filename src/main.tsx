@@ -1,12 +1,13 @@
+import { ThemeProvider } from "@mui/material/styles";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import AppRouter from "./routes/Router.tsx";
-import { worker } from "./mocks/browsers.ts";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme.ts";
+import { RouterProvider } from "react-router";
 import "./i18n.ts";
+import "./index.css";
+import { worker } from "./mocks/browsers.ts";
+import router from "./routes/Router.tsx";
+import theme from "./theme.ts";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <AppRouter />
+        <RouterProvider router={router} />
       </ThemeProvider>
     </QueryClientProvider>
   </React.StrictMode>
