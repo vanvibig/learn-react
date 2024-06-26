@@ -1,8 +1,8 @@
 import { createBrowserRouter, Link } from "react-router-dom";
-import MyComponentWithLoading from "../components/MyComponentWithLoading";
 import SampleBox from "../pages/SampleBox";
 import TableWithI18n from "../pages/TableWithI18n";
 import ToggleButton from "../pages/ToggleButton";
+import MyComponentWithLoading from "../components/hoc1/MyComponentWithLoading";
 
 const router = createBrowserRouter([
   {
