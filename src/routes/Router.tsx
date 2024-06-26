@@ -1,6 +1,7 @@
 import { createBrowserRouter, Link } from "react-router-dom";
 import ToggleButton from "../pages/ToggleButton";
 import TableWithI18n from "../pages/TableWithI18n";
+import SampleBox from "../pages/SampleBox";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "table-with-i18n",
     element: <TableWithI18n />,
+  },
+  {
+    path: "sample-box",
+    element: <SampleBox />,
   },
 ]);
 
