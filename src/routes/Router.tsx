@@ -5,6 +5,7 @@ import MainWithSideBarComponent from "../components/hoc2/MainWithSideBarComponen
 import SampleBox from "../pages/SampleBox";
 import TableWithI18n from "../pages/TableWithI18n";
 import ToggleButton from "../pages/ToggleButton";
+import CreateContactDrawer from "../components/CreateContactDrawer";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         </Container>
       </div>
     ),
+  },
+  {
+    path: "create-contact-drawer",
+    element: <CreateContactDrawer />,
   },
 ]);
 
