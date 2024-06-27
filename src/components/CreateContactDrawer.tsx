@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 import {
-  Drawer,
-  TextField,
-  Button,
-  IconButton,
   Box,
+  Button,
+  Drawer,
+  IconButton,
+  TextField,
   Typography,
 } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import React, { useState } from "react";
 
 const CreateContactDrawer: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -18,9 +18,24 @@ const CreateContactDrawer: React.FC = () => {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={toggleDrawer(true)}>
-        Open Form
-      </Button>
+      <Box>
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="flex-start"
+          height="100vh"
+          pt={2} // Adjust the padding-top to control the space from the top
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={toggleDrawer(true)}
+          >
+            Open Form
+          </Button>
+        </Box>
+        <Box />
+      </Box>
       <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
         <Box
           display="flex"
@@ -29,7 +44,7 @@ const CreateContactDrawer: React.FC = () => {
           sx={{
             backgroundImage:
               "linear-gradient(-303deg,#00a4bd,#00afb2 56%,#00bda5)",
-            width: 300,
+            width: 500,
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
@@ -47,7 +62,7 @@ const CreateContactDrawer: React.FC = () => {
         </Box>
         <Box
           sx={{
-            width: 300,
+            width: 500,
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -84,20 +99,26 @@ const CreateContactDrawer: React.FC = () => {
               />
             </form>
           </Box>
-          <Box display="flex" justifyContent="space-between" mt={2}>
-            <Button variant="contained" color="primary" type="submit">
-              Create
-            </Button>
-            <Button variant="outlined" color="secondary">
-              Create and add another
-            </Button>
-            <Button
-              variant="text"
-              color="primary"
-              onClick={toggleDrawer(false)}
-            >
-              Cancel
-            </Button>
+          <Box display="flex" justifyContent="space-between">
+            <Box>
+              <Button variant="contained" color="primary" type="submit">
+                Create
+              </Button>
+            </Box>
+            <Box>
+              <Button variant="outlined" color="secondary">
+                Create Another
+              </Button>
+            </Box>
+            <Box>
+              <Button
+                variant="text"
+                color="primary"
+                onClick={toggleDrawer(false)}
+              >
+                Cancel
+              </Button>
+            </Box>
           </Box>
         </Box>
       </Drawer>
