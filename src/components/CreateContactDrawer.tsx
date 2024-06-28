@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Drawer,
+  Grid,
   IconButton,
   TextField,
   Typography,
@@ -91,12 +92,24 @@ const CreateContactDrawer: React.FC = () => {
                 label="Job title"
                 type="text"
               />
-              <TextField
-                fullWidth
-                margin="normal"
-                label="Phone number"
-                type="tel"
-              />
+              <Grid container spacing={2}>
+                <Grid item xs={3}>
+                  <TextField
+                    fullWidth
+                    margin="normal"
+                    label="Country Code"
+                    type="tel"
+                  />
+                </Grid>
+                <Grid item xs={9}>
+                  <TextField
+                    fullWidth
+                    margin="normal"
+                    label="Phone Number"
+                    type="tel"
+                  />
+                </Grid>
+              </Grid>
             </form>
           </Box>
           <Box display="flex" justifyContent="space-between">
