@@ -3,10 +3,9 @@ import {
   Box,
   Button,
   Drawer,
-  Grid,
   IconButton,
   TextField,
-  Typography,
+  Typography
 } from "@mui/material";
 import React, { useState } from "react";
 
@@ -92,24 +91,24 @@ const CreateContactDrawer: React.FC = () => {
                 label="Job title"
                 type="text"
               />
-              <Grid container spacing={2}>
-                <Grid item xs={3}>
+              <Box display="flex" gap={2}>
+                <Box flex="0 0 25%">
                   <TextField
                     fullWidth
                     margin="normal"
                     label="Country Code"
                     type="tel"
                   />
-                </Grid>
-                <Grid item xs={9}>
+                </Box>
+                <Box flex="1">
                   <TextField
                     fullWidth
                     margin="normal"
                     label="Phone Number"
                     type="tel"
                   />
-                </Grid>
-              </Grid>
+                </Box>
+              </Box>
             </form>
           </Box>
           <Box display="flex" justifyContent="space-between">
@@ -135,7 +134,7 @@ const CreateContactDrawer: React.FC = () => {
           </Box>
         </Box>
       </Drawer>
-    </div>
+    </div >
   );
 };
 
