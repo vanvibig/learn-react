@@ -6,6 +6,7 @@ import SampleBox from "../pages/SampleBox";
 import TableWithI18n from "../pages/TableWithI18n";
 import ToggleButton from "../pages/ToggleButton";
 import CreateContactDrawer from "../components/CreateContactDrawer";
+import ParentComponent from "../components/state/Parent";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "create-contact-drawer",
     element: <CreateContactDrawer />,
+  },
+  {
+    path: "parent-state",
+    element: <ParentComponent />,
   },
 ]);
 
