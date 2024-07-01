@@ -12,11 +12,11 @@ const ParentComponent: React.FC = () => {
   return (
     <div style={{ display: 'flex' }}>
       <div style={{ flex: 1 }}>
-        <h1>Child1</h1>
+        <h1>Left</h1>
         <Left updateState={updateState} />
       </div>
       <div style={{ flex: 1 }}>
-        <h1>Child2</h1>
+        <h1>Right</h1>
         <Right sharedState={sharedState} />
       </div>
     </div>
