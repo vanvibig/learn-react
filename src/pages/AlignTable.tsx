@@ -3,8 +3,11 @@ import UserTable from "./UserTable";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import { useQueryClient } from "@tanstack/react-query";
+import { Button } from "@mui/material";
 
 const AlignTable: React.FC = () => {
+  const queryClient = useQueryClient()
   return (
     <>
       <Container>
@@ -19,6 +22,13 @@ const AlignTable: React.FC = () => {
             </Grid>
           </Grid>
         </Box>
+      </Container>
+      <Container>
+        <Button variant="contained"
+          onClick={() => {
+            queryClient.invalidateQueries({ queryKey: ['get-users'] })
+          }}
+        >refetch</Button>
       </Container>
     </>
   );

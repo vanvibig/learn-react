@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const UserTable: React.FC = () => {
     const { data, error, isLoading } = useQuery({
-        queryKey: ['get-users'],
+        queryKey: ['get-users', 'random', MaterialReactTable, useQuery],
         queryFn: () =>
             fetch('/api/users/v1').then((res) =>
                 res.json(),
