@@ -7,7 +7,7 @@ const UserTable: React.FC = () => {
     const { data, error, isLoading } = useQuery({
         queryKey: ['get-users'],
         queryFn: () =>
-            fetch('/api/users').then((res) =>
+            fetch('/api/users/v1').then((res) =>
                 res.json(),
             ),
     })
