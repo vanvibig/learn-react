@@ -111,7 +111,7 @@ const CreateContactDrawer: React.FC = () => {
               </Box>
             </form>
           </Box>
-          <Box display="flex" justifyContent="space-between">
+          <Box display="flex" sx={{ gap: 2 }}>
             <Box>
               <Button variant="contained" color="primary" type="submit">
                 Create
