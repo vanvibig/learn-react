@@ -8,6 +8,7 @@ import ToggleButton from "../pages/ToggleButton";
 import CreateContactDrawer from "../components/CreateContactDrawer";
 import ParentComponent from "../components/state/Parent";
 import AlignTable from "../pages/AlignTable";
+import MButton from "../pages/MButton";
 
 const router = createBrowserRouter([
   {
@@ -71,7 +72,10 @@ const router = createBrowserRouter([
     path: "align-table",
     element: <AlignTable />,
   },
-
+  {
+    path: "m-button",
+    element: <MButton />,
+  },
 ]);
 
 export default router;
