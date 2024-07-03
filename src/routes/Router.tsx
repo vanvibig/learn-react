@@ -10,6 +10,7 @@ import ParentComponent from "../components/state/Parent";
 import AlignTable from "../pages/AlignTable";
 import MButton from "../pages/MButton";
 import LStateCompare from "../pages/LStateCompare";
+import BigForm from "../pages/BigForm";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
   {
     path: "l-state-compare",
     element: <LStateCompare />,
+  },
+  {
+    path: "big-form",
+    element: <BigForm />,
   },
 ]);
 
