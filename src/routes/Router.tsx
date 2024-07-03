@@ -9,6 +9,7 @@ import CreateContactDrawer from "../components/CreateContactDrawer";
 import ParentComponent from "../components/state/Parent";
 import AlignTable from "../pages/AlignTable";
 import MButton from "../pages/MButton";
+import LStateCompare from "../pages/LStateCompare";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
   {
     path: "m-button",
     element: <MButton />,
+  },
+  {
+    path: "l-state-compare",
+    element: <LStateCompare />,
   },
 ]);
 
