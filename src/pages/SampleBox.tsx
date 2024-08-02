@@ -8,7 +8,7 @@ import {
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Item from "../components/Item";
+import Item from "../components/old/Item";
 
 const bull = (
   <Box

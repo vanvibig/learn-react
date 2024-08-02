@@ -1,12 +1,12 @@
 import { Container, Grid } from "@mui/material";
 import { createBrowserRouter, Link } from "react-router-dom";
-import MyComponentWithLoading from "../components/hoc1/MyComponentWithLoading";
-import MainWithSideBarComponent from "../components/hoc2/MainWithSideBarComponent";
+import MyComponentWithLoading from "../components/old/hoc1/MyComponentWithLoading";
+import MainWithSideBarComponent from "../components/old/hoc2/MainWithSideBarComponent";
 import SampleBox from "../pages/SampleBox";
 import TableWithI18n from "../pages/TableWithI18n";
 import ToggleButton from "../pages/ToggleButton";
-import CreateContactDrawer from "../components/CreateContactDrawer";
-import ParentComponent from "../components/state/Parent";
+import CreateContactDrawer from "../components/old/CreateContactDrawer";
+import ParentComponent from "../components/old/state/Parent";
 import AlignTable from "../pages/AlignTable";
 import MButton from "../pages/MButton";
 import LStateCompare from "../pages/LStateCompare";
