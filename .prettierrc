@@ -4,7 +4,7 @@
   "useTabs": false,
   "trailingComma": "all",
   "singleQuote": true,
-  "plugins": ["prettier-plugin-hermes-parser"],
+  "plugins": ["prettier-plugin-hermes-parser", "prettier-plugin-tailwindcss"],
   "overrides": [
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.flow", "*.json"],
