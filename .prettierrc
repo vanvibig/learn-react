@@ -1,0 +1,14 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "parser": "typescript",
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-hermes-parser"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "options": { "parser": "hermes" }
+    }
+  ]
+}
