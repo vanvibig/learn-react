@@ -13,5 +13,7 @@
         "parser": "hermes"
       }
     }
-  ]
+  ],
+  "printWidth": 80,
+  "singleAttributePerLine": true
 }
