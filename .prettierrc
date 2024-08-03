@@ -2,7 +2,15 @@
   "semi": false,
   "tabWidth": 2,
   "useTabs": false,
-  "trailingComma": "none",
-  "parser": "typescript",
-  "singleQuote": true
+  "trailingComma": "all",
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-hermes-parser"],
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.flow", "*.json"],
+      "options": {
+        "parser": "hermes"
+      }
+    }
+  ]
 }
