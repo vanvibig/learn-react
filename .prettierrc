@@ -8,12 +8,14 @@
   "endOfLine": "lf",
   "overrides": [
     {
-      "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.flow", "*.json"],
+      "files": ["*.ts", "*.tsx"],
       "options": {
-        "parser": "hermes"
+        "trailingComma": "all",
+        "parser": "typescript"
       }
     }
   ],
   "printWidth": 80,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "arrowParens":"avoid"
 }
