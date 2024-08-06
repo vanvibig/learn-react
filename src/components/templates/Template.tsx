@@ -1,9 +1,9 @@
-import { Button } from '@/components/ui/button'
+import Button from '@mui/material/Button'
 
 const Template = () => {
   return (
     <div className="container mx-auto p-5">
-      <Button>Click me</Button>
+      <Button variant="contained">Hello world</Button>;
     </div>
   )
 }
