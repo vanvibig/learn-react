@@ -17,5 +17,5 @@
   ],
   "printWidth": 80,
   "singleAttributePerLine": true,
-  "arrowParens":"avoid"
+  "arrowParens": "avoid"
 }

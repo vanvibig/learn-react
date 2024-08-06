@@ -1,14 +1,16 @@
-import App from "@/App";
-import Template from "@/components/templates/Template";
-import { createBrowserRouter } from "react-router-dom";
+import App from '@/App'
+import Template from '@/components/templates/Template'
+import { createBrowserRouter } from 'react-router-dom'
 
-export default createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
   },
   {
-    path: "/template",
+    path: '/template',
     element: <Template />,
   },
-]);
+])
+
+export default router
